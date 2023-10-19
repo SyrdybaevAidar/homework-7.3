@@ -5,8 +5,8 @@ interface panelComponentProps{
     numbers: number[]
 }
 
-const panelComponent: React.FC<panelComponentProps>  = prop => {
-    return <div>
+const PanelComponent: React.FC<panelComponentProps>  = prop => {
+    return <div className='numberPanel'>
         <NumberComponent number={prop.numbers[0]}/>
         <NumberComponent number={prop.numbers[1]}/>
         <NumberComponent number={prop.numbers[2]}/>
@@ -14,3 +14,5 @@ const panelComponent: React.FC<panelComponentProps>  = prop => {
         <NumberComponent number={prop.numbers[4]}/>
     </div>
 }
+
+export default PanelComponent;
