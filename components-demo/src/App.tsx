@@ -19,14 +19,11 @@ const generateNumbers = () => {
 
 function App() {
   const [numbers, setNumbers] = useState<number[]>([5, 11, 16, 23, 32]);
-  
   return (
     <>
       <div>
         <PanelComponent numbers={numbers}/>
-        <button onClick={setNumbers => {
-          this.Se
-        }}>new Numbers</button>
+        <button onClick={() => setNumbers(generateNumbers())}>new Numbers</button>
       </div>
     </>
   )
